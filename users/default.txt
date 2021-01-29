@@ -1,0 +1,9 @@
+Ceremonial Revolver$Well oiled$Improved rate of fire$10$Bloodlust$Damage increases on kills$10
+Vintage Shotgun$Unstoppable$Reduces flinch and incoming damage$10$Bloodlust$Damage increases on kills$10
+Bloodrage$Dense Rounds$Higher chance to stagger enemies$10$Combustion$Damage ignites enemies$10
+The Executioner$Lightweight$Decrease weight$10$Blowback$Last round does significantly increased damage but also hurts you$10
+Covert Affairs$Bloodlust$Damage increases on kills$10$Dense Rounds$Higher chance to stagger enemies$10
+Amigo$Combustion$Damage ignites enemies$10$Bloodlust$Damage increases on kills$10
+Finality
+Penance
+The 88

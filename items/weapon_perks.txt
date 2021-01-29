@@ -1,0 +1,10 @@
+$Well oiled$Improved rate of fire$10
+$Bloodlust$Damage increases on kills$10
+$Lightweight$Decrease weight$10
+$Unstoppable$Reduces flinch and incoming damage$10
+$Combustion$Damage ignites enemies$10
+$Blowback$Last round does significantly increased damage but also hurts you$10
+$Dense Rounds$Higher chance to stagger enemies$10
+$Hollowpoint$Damage bleeds enemies$10
+$Masochism$Heal from kills$10
+$Armour Shatter$Shatters enemies armour$10

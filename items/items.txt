@@ -1,0 +1,18 @@
+Vintage Shotgun$Shotgun$Common$100$"The rust makes it look better, it's an antique"
+Standard Issue Rifle$Auto Rifle$Common$100$Nearly every soldier on the Outer-Rim has one of these
+Rattlesnake Revolver$Revolver$Common$100$Outside the safezones there is only one law, you
+Military Issue Rifle$Auto Rifle$Rare$200$Renowned for it's reliability
+Scouts Rifle$Semi Rifle$Rare$200$A good scout never leaves their rifle behind, hopefully you're better then the last to use this
+Outlaws Revolver$Revolver$Rare$200$"The laws can barely be enforced on Earth, what makes you think they'll find me out here?"
+Old Guard Rifle$Auto Rifle$Rare$200$An old rifle used by some of the first to the Outer-Rim, hopefully it still shoots straight
+Covert Affairs$Machine Gun$Legendary$255$It may have be made in a peaceful time but it is far from a tool of peace
+Catastrophe$Rocket Launcher$Legendary$255$What can they do but burn
+One Eye Open$Semi Rifle$Legendary$255$I just can't seem to miss
+Amigo$Revolver$Legendary$255$Tan confiable como el dia en que se hizo
+The Executioner$Sniper Rifle$Legendary$255$I don't judge the crimes, I just carry out the sentence
+Bloodrage$Shotgun$Legendary$255$"Trust me, it looks worse when it's not covered in meat"
+Ceremonial Revolver$Revolver$Legendary$255$An ornate revolver that looks like it never left it's holster
+The 88$Machine Gun$Exotic$300$When this baby hits 88, you're gonna see some serious shit$Back$Reloads missed shots$1$The Future$Kills cause explosions$10
+Reign$Revolver$Exotic$300$"When I am king the wine will flow as potently as the blood" - Prince Teran$Targeted Bleed$Causes massive bleed$20$Royal Ascension$Bleeds applied cause new bleeds to deal more damage$5
+Finality$Sniper Rifle$Exotic$300$This is not the end for you... not yet$Unstoppable$Reduces flinch and incoming damage$10$Definitively$Kills double damage for a short time$2
+Penance$Rocket Launcher$Exotic$300$Confess your sins or suffer the wrath of hell$Absolution$Kills restore health$50$Damnation$Causes enemies to wither$10

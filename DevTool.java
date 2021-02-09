@@ -13,11 +13,14 @@
  
  public class DevTool{
 	 
+	 LinkedList<String> items = new LinkedList();
+	 LinkedList<String> perks = new LinkedList();
 	 
-	 
+	 File itemFile = null;
+	 File perkFile = null;
 	 
 	 public static void addItem(){
-		 
+				 
 		Scanner input = new Scanner(System.in);
 		 
 		String fullItem = "";
@@ -100,10 +103,22 @@
 		}
 	 }
 	 
+	 public static void startup(){
+		 
+		 itemFile = new File("items/items.txt");
+		 perkFile = new File("items/perks.txt");
+		 
+		 
+		 
+		 
+	 }
+	 
 	 public static void main(String[] args){
 	 
 		String type = "";
 		Scanner start = new Scanner(System.in);
+		
+		
 	 
 		while(true){
 			

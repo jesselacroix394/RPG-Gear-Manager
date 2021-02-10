@@ -1,0 +1,10 @@
+Version 1.0.1
+- Added DevTool.java
+	- Can quickly create items and perks
+	- Remove feature comming soon
+- Added Launcher
+	- Allows for launch of Server.java, Client.java, and DevTool.java
+	- Allows for display of most recent change log
+	- Displays version title
+- Added List command
+	- Allows users to list the names of all items in their inventory

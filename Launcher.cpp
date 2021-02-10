@@ -93,7 +93,7 @@
 			
 			if(file.is_open()){
 				
-				cout << file.rdbuf();
+				cout << file.rdbuf() << endl;
 			}
 			else{
 				

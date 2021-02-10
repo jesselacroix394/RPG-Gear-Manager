@@ -396,6 +396,38 @@
 				return output;
 			}
 			
+			/* list
+			 * Takes nothing
+			 * Displays a list of all items
+			 * Returns String
+			 */
+			public String list(){
+				
+				String fullList = "";
+				String[] splitLines;
+				try{
+					
+					fileRead = new Scanner(user);
+				
+					while(fileRead.hasNextLine()){
+						
+						splitLines = fileRead.nextLine().split("\\$");
+
+						fullList += splitLines[0] + "\n";
+					}
+					
+					fileRead.close();
+				}
+				catch(FileNotFoundException e){
+					
+					System.out.println(e);
+				}
+				
+				fullList = fullList.substring(0, fullList.length() - 1);
+				
+				return fullList;
+			}
+			
 			
 			//Receives messages from the client and processes them
 			public void run(){
@@ -452,6 +484,10 @@
 						else if(request[request.length - 1].equals("equip")){
 							
 							send = "Equiping " + name;
+						}
+						else if(request[0].equals("list")){
+							
+							send = list();
 						}
 						//Shows which user disconnected
 						else if(request[request.length - 1].equals("Close")){

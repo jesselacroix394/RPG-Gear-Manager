@@ -16,3 +16,5 @@ The 88$Machine Gun$Exotic$300$When this baby hits 88, you're gonna see some seri
 Reign$Revolver$Exotic$300$"When I am king the wine will flow as potently as the blood" - Prince Teran$Targeted Bleed$Causes massive bleed$20$Royal Ascension$Bleeds applied cause new bleeds to deal more damage$5
 Finality$Sniper Rifle$Exotic$300$This is not the end for you... not yet$Unstoppable$Reduces flinch and incoming damage$10$Definitively$Kills double damage for a short time$2
 Penance$Rocket Launcher$Exotic$300$Confess your sins or suffer the wrath of hell$Absolution$Kills restore health$50$Damnation$Causes enemies to wither$10
+Roll the Dice$Auto Rifle$Legendary$255$Let the good times roll
+Box of Secrets$Revolver$Exotic$300$Lift the lid and let the horrors spill out$The Unknown$Crits have a chance to inflict random debuffs$10$Compounding Chaos$The chance to inflict debuffs increases as the magazine decreases$5

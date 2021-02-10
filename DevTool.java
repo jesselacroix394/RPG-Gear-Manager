@@ -13,12 +13,43 @@
  
  public class DevTool{
 	 
-	 LinkedList<String> items = new LinkedList();
-	 LinkedList<String> perks = new LinkedList();
+	 //Foundation for future sorting
+	 //LinkedList<String> items = new LinkedList();
+	 //LinkedList<String> perks = new LinkedList();
+	 	 
+	 static File itemFile = null;
+	 static File perkFile = null;
 	 
-	 File itemFile = null;
-	 File perkFile = null;
+	 /*
+	  * addToFile(File, String)
+	  * Adds created items and perks to their files
+	  * Returns nothing
+	  */
+	 public static void addToFile(File filePath, String msg){
+		 
+		 try{
+			FileWriter adding = new FileWriter(filePath, true);
+			BufferedWriter buffer = new BufferedWriter(adding);
+			PrintWriter out = new PrintWriter(buffer);
+		 
+			out.println(msg);		 
+			
+			out.close();
+			buffer.close();
+			adding.close();
+			
+		 }
+		 catch(IOException e){
+			 
+			 System.out.println(e);
+		 }
+	 }
 	 
+	 /*
+	  * addItem()
+	  * Gets required information from cammand line to create item 
+	  * Returns nothing
+	  */
 	 public static void addItem(){
 				 
 		Scanner input = new Scanner(System.in);
@@ -27,18 +58,18 @@
 		String rarity = "";
 	 
 		System.out.println("Input item name:");
-		fullItem += input.nextLine() + "\\$";
+		fullItem += input.nextLine() + "$";
 		
 		System.out.println("Input item type:");
-		fullItem += input.nextLine() + "\\$";
+		fullItem += input.nextLine() + "$";
 		
 		
 		System.out.println("Input item rarity:");
 		rarity = input.nextLine();
-		fullItem +=  rarity + "\\$";
+		fullItem +=  rarity + "$";
 		
 		System.out.println("Input item level:");
-		fullItem += input.nextLine() + "\\$";
+		fullItem += input.nextLine() + "$";
 		
 		System.out.println("Input item description:");
 		fullItem += input.nextLine();
@@ -46,28 +77,33 @@
 		if(rarity.equals("Exotic")){
 			
 			System.out.println("Input perk 1 name:");
-			fullItem +=  "\\$" + input.nextLine() + "\\$";
+			fullItem +=  "$" + input.nextLine() + "$";
 		
 			System.out.println("Input perk 1 description:");
-			fullItem += input.nextLine() + "\\$";
+			fullItem += input.nextLine() + "$";
 		
 			System.out.println("Input perk 1 amount:");
-			fullItem += input.nextLine() + "\\$";
+			fullItem += input.nextLine() + "$";
 			
 			System.out.println("Input perk 2 name:");
-			fullItem += input.nextLine() + "\\$";
+			fullItem += input.nextLine() + "$";
 		
 			System.out.println("Input perk 2 description:");
-			fullItem += input.nextLine() + "\\$";
+			fullItem += input.nextLine() + "$";
 		
 			System.out.println("Input perk 2 amount:");
 			fullItem += input.nextLine();
 			
 		}
 		
-		System.out.println(fullItem);
+		addToFile(itemFile, fullItem);
 	 }
 	 
+	 /*
+	  * addPerk()
+	  * Gets required information from cammand line to create perk
+	  * Returns nothing
+	  */
 	 public static void addPerk(){
 		 
 		Scanner input = new Scanner(System.in);
@@ -75,18 +111,22 @@
 		String fullPerk = "";
 	 
 		System.out.println("Input perk name:");
-		fullPerk += input.nextLine() + "\\$";
+		fullPerk += "$" + input.nextLine() + "$";
 		
 		System.out.println("Input perk description:");
-		fullPerk += input.nextLine() + "\\$";
+		fullPerk += input.nextLine() + "$";
 		
 		System.out.println("Input perk amount:");
 		fullPerk += input.nextLine();
 		
-		System.out.println(fullPerk);
+		addToFile(perkFile, fullPerk);
 	 }
 	 
-	 
+	 /*
+	  * getType()
+	  * Checks users input for which type to use
+	  * Returns nothing
+	  */
 	 public static void getType(String type){
 		 
 		if(type.equals("Item")){
@@ -102,22 +142,14 @@
 			System.out.println("Not a valid type");
 		}
 	 }
-	 
-	 public static void startup(){
-		 
-		 itemFile = new File("items/items.txt");
-		 perkFile = new File("items/perks.txt");
-		 
-		 
-		 
-		 
-	 }
-	 
+	 	 
 	 public static void main(String[] args){
 	 
 		String type = "";
 		Scanner start = new Scanner(System.in);
 		
+		itemFile = new File("items/items.txt");
+		perkFile = new File("items/weapon_perks.txt");
 		
 	 
 		while(true){

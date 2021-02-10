@@ -8,3 +8,4 @@ $Dense Rounds$Higher chance to stagger enemies$10
 $Hollowpoint$Damage bleeds enemies$10
 $Masochism$Heal from kills$10
 $Armour Shatter$Shatters enemies armour$10
+$Splinter$Bullets impact over an area$10

@@ -47,6 +47,7 @@
 	 
 	string version = getChangeLog();
 	string option;
+	string ip;
 	string changelog;
 	string path;
 	
@@ -76,8 +77,10 @@
 		}
 		else if(option == "Client"){
 			
+			cin >> ip;
+			
 			//runs Client.java
-			system("java Client");
+			system(("java Client " + ip).c_str());
 		}
 		else if(option == "DevTool"){
 			

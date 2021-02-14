@@ -10,6 +10,8 @@
  import java.io.*;
  import java.util.*;
  import java.nio.file.*;
+ import com.dosse.upnp.UPnP;
+
  
  public class Server{
 	 
@@ -610,7 +612,20 @@
 		 }
 		 
 		 System.out.println("Server online...");
-		 
+		 /*
+		 System.out.println("Attempting UPnP port forwarding...");
+            if (UPnP.isUPnPAvailable()) { //is UPnP available?
+                if (UPnP.isMappedTCP(port)) { //is the port already mapped?
+                    System.out.println("UPnP port forwarding not enabled: port is already mapped");
+                } else if (UPnP.openPortTCP(port)) { //try to map port
+                    System.out.println("UPnP port forwarding enabled");
+                } else {
+                    System.out.println("UPnP port forwarding failed");
+                }
+            } else {
+                System.out.println("UPnP is not available");
+            }
+		 */
 		 //Allows multiple clients to connect
 		 while(true){
 			new Server(server);

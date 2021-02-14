@@ -168,7 +168,7 @@ public class Client{
 	 
 	 public static void main(String[] args){
 		 
-		String ip = "";
+		String ip = "localhost";
 		ip = args[0];
 		 
 		 

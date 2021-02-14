@@ -73,7 +73,7 @@
 		if(option == "Host"){
 			
 			//runs Server.java
-			system("java Server");
+			system("java -cp \".;WaifUPnP.jar\" Server");
 		}
 		else if(option == "Client"){
 			
